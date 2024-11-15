@@ -1,0 +1,306 @@
+
+
+/* Header Styles */
+.inspire-header {
+    width: 100%;
+    max-width: 1025px;
+    height: 300px;
+    background-image: url('Images/web/quote4.avif'); /* Background image for the header */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Content inside the header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 57%; /* Centered within the header */
+    color: white;
+}
+
+/* Heading */
+.header-content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+    color:black;
+    text-shadow: 3px 3px 12px white;
+    z-index:40;
+}
+
+/* Logo */
+.logo-small {
+    width: 230px;
+    height: 260px;
+    object-fit: contain;
+    z-index:40;
+}
+
+.carouseloverlay {
+    height:300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Main Content Layout */
+.inspire-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1025px;
+    margin: 20px auto;
+}
+
+/* Left and Right Sections */
+.left-content {
+    width: 66.66%; /* Left section takes up 2/3 of the space */
+    /* display: flex; */
+    /* flex-direction:row; */
+    /* gap: 20px; */
+    /* justify-content: space-around; */
+}
+
+.right-content {
+    width: 33.33%; /* Right section takes up 1/3 of the space */
+}
+
+/* Inspire Post Template */
+.inspire-post {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%; /* 1/3rd of the left content width */
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    float:left;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+.inspire-post-medium {
+    display: flex;
+    flex-direction: column;
+    width: 49.5%; /* 1/3rd of the left content width */
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    float:left;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+.inspire-post-xs {
+    display: flex;
+    flex-direction: column;
+    width: 32.75%; /* 1/3rd of the left content width */
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    float:left;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+.inspire-post-large {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%; /* 1/3rd of the left content width */
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    float:left;
+    margin-bottom: 5px;
+    margin-right: 3px;
+
+}
+
+.post-media img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Text Area */
+.post-text {
+    /* padding: 2px; */
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Action Icons */
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px 0;    
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.action-item:hover {
+    background-color: #eaeaea;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.action-item i {
+    color: #ff5a8f; /* Color for the icons */
+}
+
+.action-item .count {
+    color: #333;
+}
+
+
+
+/* Larger Inspire Post Template */
+.inspire-post-large {
+    display: flex;
+    flex-direction: column;
+    width: 65.66%; /* 2/3 of the left content section */
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.inspire-post-large .post-media img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Text and Actions are similar to the smaller post template */
+.inspire-post-large .post-text {
+    padding: 2px;
+    font-size: 0.85rem; /* Slightly reduced font size */
+    color: #333;
+}
+
+.inspire-post-large .post-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.inspire-post-large .action-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.inspire-post-large .action-item:hover {
+    background-color: #eaeaea;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.inspire-post-large .action-item i {
+    color: #ff5a8f; /* Icon color */
+}
+
+.inspire-post-large .action-item .count {
+    color: #333;
+}
+
+
+
+
+/* Article Post Card */
+.article-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width of the right content section */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Article Image */
+.article-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Article Title */
+.article-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Article Description */
+.article-description {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Read More Link */
+.read-more {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #ff5a8f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.right-content a {
+    text-decoration: none;
+}
+.read-more:hover {
+    color: #e04b7b;
+}

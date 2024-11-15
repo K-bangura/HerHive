@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender-Based Violence Discussion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conversations.css">
+
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <!-- Chat Header -->
+        <header class="chat-header">
+
+            <div>
+                <!-- ← -->
+                <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+                <h3>Gender-Based Violence Discussion</h3>
+            </div>
+            <!-- <p>Discuss and share your thoughts with others</p> -->
+        </header>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages">
+            <!-- Example Message from Another User -->
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile1.jpg" alt="User 1 Profile" class="user-profile">
+                    <p class="user-name">Sarah Conteh</p>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">Gender-based violence is a difficult but necessary topic to discuss. I know it’s something many of us have experienced, witnessed, or know someone affected by. I think it’s important to start by recognizing that GBV can take many forms—physical, emotional, financial, and even cultural. What comes to mind when you think about GBV?</p>
+                    <span class="message-time">10:30 AM</span>
+                </div>
+            </div>
+
+            <!-- Additional messages -->
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile5.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Maria Bertin</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">For me, it’s not just about the physical harm. Emotional abuse can be just as damaging, sometimes even more so. I've had friends who’ve been controlled and isolated by their partners, but they don’t see it as violence because there are no bruises. It’s painful to see because they think it’s normal or that it’s their fault.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+             <!-- Example Message from Current User -->
+             <div class="message current-user">
+                <div class="profile-div-c">
+                    <img src="Images/web/profiles/profile4.jpg" alt="Current User Profile" class="user-profile">
+                    <p class="user-name">You</p>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">Exactly, Maria. I agree, and I think in many cultures—including mine—there’s often an acceptance of certain behaviors as “normal.” There’s this idea that a man has a right to control his wife or partner, and it’s reinforced by family members. Many women are afraid to speak up, not only because of fear of backlash but because they don’t realize they have the right to speak up.</p>
+                    <span class="message-time">10:32 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile3.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Joy Gifty</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Yes, and that fear is real. I work with young women in schools, and it breaks my heart to hear them talk about harassment and violence as if it’s something they just have to accept. They say things like, “That’s just how men are,” or “I must’ve done something wrong.” They’re internalizing this idea that it’s their responsibility to avoid violence, which is unfair and damaging.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile5.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Maria Bertin</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Absolutely, Joy. I think a big part of the issue is how society treats gender-based violence as a private issue rather than a public one. Women are told not to talk about it or to handle it within their families, which just silences them more. And then there’s the lack of support. If a woman does come forward, she’s often left to navigate it alone, without enough resources to protect her or help her heal.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile1.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Sarah Conteh</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">That’s so true. And I think the lack of support is also why so many women stay in abusive relationships. They don’t see any alternatives. If there were more safe spaces or shelters and more open dialogue, maybe more women would feel empowered to leave abusive situations.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message current-user">
+                <div class="profile-div-c">
+                    <img src="Images/web/profiles/profile4.jpg" alt="Current User Profile" class="user-profile">
+                    <p class="user-name">You</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">And speaking of resources, we need more counseling services, legal aid, and rehabilitation for survivors. In many areas, these just aren’t available. And it’s not just about getting away from abuse; it’s about rebuilding lives and restoring confidence, which takes time and support.</p>
+                    <span class="message-time">10:37 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile9.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Khadija Bah</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Education is another key, both for women and men. I think it’s essential to teach young people about healthy relationships, boundaries, and consent. If we start early, we can change the way society views gender-based violence and shift mindsets. We need to talk to boys about respect and empathy, not just to girls about protecting themselves.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile8.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Sasha</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Yes, Khadija, that’s so important. Prevention is often overlooked, but education can help break the cycle before it even begins. It’s about changing the culture, not just addressing individual cases.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Input Area -->
+        <div class="message-input-area">
+            <input type="text" placeholder="Type a message..." class="message-input">
+            <button class="attach-btn"><i class="fas fa-paperclip"></i></button>
+            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+
+    </div>
+
+    <script src="conversations.js"></script>
+</body>
+</html>

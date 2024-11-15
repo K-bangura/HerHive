@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="learn.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="articles.css">
+</head>
+<body>
+    <div class="container">
+    <!-- Header with Back Button and Title -->
+    <div class="header" id="header">
+         <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+         <!-- <button class="back-btn" onclick="goBack()">←</button> -->
+        <h1>Articles</h1>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="articles-content">
+        
+        <!-- Category: Technology -->
+        <div class="category-section">
+            <h2>Technology</h2>
+            <div class="articles-row">
+                <div class="article-card">
+                    <img src="tech-article1.jpg" alt="Tech Article 1">
+                    <h3>AI in Modern Healthcare</h3>
+                    <p>Exploring the role of artificial intelligence in healthcare advancements...</p>
+                </div>
+                <div class="article-card">
+                    <img src="tech-article2.jpg" alt="Tech Article 2">
+                    <h3>The Future of Quantum Computing</h3>
+                    <p>Quantum computing is set to revolutionize technology as we know it...</p>
+                </div>
+                <div class="article-card">
+                    <img src="tech-article3.jpg" alt="Tech Article 3">
+                    <h3>5G Networks and IoT</h3>
+                    <p>How 5G will transform IoT and connectivity across industries...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Science -->
+        <div class="category-section">
+            <h2>Science</h2>
+            <div class="articles-row">
+                <div class="article-card">
+                    <img src="science-article1.jpg" alt="Science Article 1">
+                    <h3>The Mysteries of Space</h3>
+                    <p>A deep dive into the latest discoveries in astrophysics...</p>
+                </div>
+                <div class="article-card">
+                    <img src="science-article2.jpg" alt="Science Article 2">
+                    <h3>Genetic Engineering Breakthroughs</h3>
+                    <p>Recent advancements in genetic engineering that could reshape biology...</p>
+                </div>
+                <div class="article-card">
+                    <img src="science-article3.jpg" alt="Science Article 3">
+                    <h3>Climate Change and Sustainability</h3>
+                    <p>Exploring the impacts of climate change and sustainable solutions...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p class="learn-copy"> &copy;HerHive </p>
+    </footer>   
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

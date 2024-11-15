@@ -1,0 +1,74 @@
+/* style.css */
+
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* You can choose a different sans-serif if you prefer */
+    color: #000; /* Black text color */
+    background-color: #fff; /* White background */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1025px;
+    margin: 0 auto; /* Center the content */
+}
+
+
+
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    width: 80%; /* Centered and within the main content area */
+    max-width: 600px;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    color: #333;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: #ff5a8f;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e04b7b;
+}
+
+.search-bar button i {
+    font-size: 1.2rem;
+}

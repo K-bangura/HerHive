@@ -1,0 +1,84 @@
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    /* width: 100%; */
+    top: 0;
+    z-index: 10;
+}
+
+.header .back-btn {
+    font-size: 18px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Tutorials Content Area */
+.tutorials-content {
+    padding: 80px 20px 20px; /* Extra padding for the fixed header */
+    max-width: 1025px;
+    margin: auto;
+}
+
+/* Category Section Styling */
+.category-section {
+    margin-bottom: 30px;
+}
+
+.category-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Tutorials Row Layout */
+.tutorials-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Video Card Styling */
+.video-card {
+    flex: 1 1 calc(33.333% - 10px); /* 3 cards per row with gap */
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-card:hover {
+    /* transform: translateY(-3px); */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: all .3s ease-in-out;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="learn.css">
+    <link rel="stylesheet" href="courses.css">
+    <link rel="stylesheet" href="books.css">
+</head>
+<body>
+
+    <div class="container">
+    <!-- Header with Back Button and Title -->
+    <div class="header" id="header">
+         <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+         <!-- <button class="back-btn" onclick="goBack()">←</button> -->
+        <h1>Books</h1>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="books-content">
+        
+        <!-- Category: Science Fiction -->
+        <div class="category-section">
+            <h2>Science Fiction</h2>
+            <div class="books-row">
+                <div class="book-card">
+                    <img src="sci-fi-book1.jpg" alt="Sci-Fi Book 1">
+                    <h3>Galactic Adventures</h3>
+                    <p>A journey through space and time, exploring distant galaxies...</p>
+                    <button class="book-action">Read</button>
+                    <button class="book-action">Download</button>
+                </div>
+                <div class="book-card">
+                    <img src="sci-fi-book2.jpg" alt="Sci-Fi Book 2">
+                    <h3>Future Horizons</h3>
+                    <p>A tale of human resilience in a futuristic society...</p>
+                    <button class="book-action">Read</button>
+                    <button class="book-action">Download</button>
+                </div>
+                <!-- Add more book cards as needed -->
+            </div>
+        </div>
+
+        <!-- Category: History -->
+        <div class="category-section">
+            <h2>History</h2>
+            <div class="books-row">
+                <div class="book-card">
+                    <img src="history-book1.jpg" alt="History Book 1">
+                    <h3>Ancient Civilizations</h3>
+                    <p>Explore the rise and fall of ancient empires across the world...</p>
+                    <button class="book-action">Read</button>
+                    <button class="book-action">Download</button>
+                </div>
+                <div class="book-card">
+                    <img src="history-book2.jpg" alt="History Book 2">
+                    <h3>World War Chronicles</h3>
+                    <p>A detailed look at the events of World War I and II...</p>
+                    <button class="book-action">Read</button>
+                    <button class="book-action">Download</button>
+                </div>
+                <!-- Add more book cards as needed -->
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p class="learn-copy"> &copy;HerHive </p>
+    </footer> 
+    
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

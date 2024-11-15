@@ -1,0 +1,795 @@
+.learn-conversations-header {
+    background-image: url('Images/web/learn7.avif'); /* Replace with actual image path */
+}
+
+
+/****************************** Main Content Wrapper */
+.learn-content {
+    display: flex;
+    width:100%;
+    gap: 5px; /* Space between the two sections */
+    padding: 3px; /* Padding around the main content */
+}
+
+/* Left Section (38% Width) */
+.learn-left {
+    flex: 0 0 39%; /* Fixed to 38% width */
+    padding: 5px; /* Inner padding for content */
+    background-color: #f9f9f9; /* Background color for visibility */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+
+
+
+
+
+/******************************* Left Side Personalized Sections */
+.my-courses-container, .my-books-container, .my-articles-container, .my-videos-container {
+    margin-bottom: 20px;
+}
+
+/* Course Card */
+.my-courses-container .course-card,
+.my-articles-container .article-card,
+.my-books-container .book-card {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Book Card */
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.book-cover {
+    width: 100px;
+    height: 140px;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+.start-course-btn, .read-btn, .download-btn, .read-article-btn, .watch-now-btn {
+    background-color: #e0356f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.start-course-btn:hover, .read-btn:hover, .download-btn:hover, .read-article-btn:hover, .watch-now-btn:hover {
+    background-color: #e0356f;
+}
+
+
+
+/* Course Card with Image */
+.course-card {
+    /*display: flex;
+    gap: 10px;*/
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.course-image {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+}
+
+/*.course-info {
+    flex: 1;
+}
+*/
+
+/* Book Card in Two-Column Layout */
+.my-books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.book-card {
+    width: 48%;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.learn-left .book-card {
+    width: 48%;
+    min-height: 200px;
+}
+
+.learn-left .book-cover {
+    width: 78%;
+    height: 170px;
+    border-radius: 4px;
+}
+
+.book-info {
+    flex: 1;
+}
+
+/* Progress Bars */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 6px;
+    margin: 10px 0;
+}
+
+.progress {
+    background-color: #e0356f;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Button Styling */
+.start-course-btn, .read-btn, .download-btn, .read-article-btn {
+    background-color: #e0356f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    /* margin:0px auto; */
+    margin-top: 5px;
+}
+
+.start-course-btn:hover, .read-btn:hover, .download-btn:hover, .read-article-btn:hover {
+    background-color: #e0356f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************* Right Section (60% Width) */
+.learn-right {
+    flex: 0 0 60%; /* Fixed to 60% width */
+    padding: 5px; /* Inner padding for content */
+    background-color: #f9f9f9; /* Background color for visibility */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* Right Section (Categories, 60% Width) */
+
+/* Categories Container */
+
+.learn-right h2 {
+    margin-bottom: 10px;
+}
+.categories-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Restrict width to the parent container */
+    max-width: 100%; /* Ensure it doesn't exceed parent's width */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    padding-bottom: 5px; /* Space for scrollbar */
+    padding-top: 5px; /* Space for scrollbar */
+}
+
+/* Categories Row (for stacking rows) */
+.categories-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* Category Tiles */
+.category-tile {
+    min-width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for Overflow Scroll */
+.categories-container::-webkit-scrollbar {
+    height: 2px;
+}
+.categories-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+.categories-container::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Courses Section */
+.learn-right h2 {
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.see-more-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.first-see-more-div  {
+    margin-top: 15px;
+}
+.see-more-div p {
+    font-size: 0.8em;
+    color:#666;
+}
+.see-more-div p:hover {
+    cursor: pointer;
+}
+.see-more-div a {
+    font-size: 0.8em;
+    color:#666;
+    text-decoration: none;
+    color:#ff5a8f
+}
+.see-more-div a:hover {
+    cursor: pointer;
+    color: #e0356f;
+    font-size: .85em;
+}
+
+/* Courses Container */
+.courses-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-top: 0px;
+    background-color:#f2f2f2;
+}
+
+/* Course Tile */
+.course-tile {
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    height: 250px;
+    background: #ffffff;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.course-tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Course Thumbnail */
+.course-thumbnail {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Course Info */
+.course-info {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Course Title */
+.course-title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: black;
+}
+
+/* Course Description */
+.course-description {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 10px;
+    white-space: wrap;
+    font-weight: normal;
+}
+
+/* Start Course Button */
+.start-course-btn {
+    background-color: #ff5a8f;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.start-course-btn:hover {
+    background-color: #e0356f;
+}
+
+/* Styling for Scroll Bar */
+.courses-container::-webkit-scrollbar {
+    height: 2px;
+}
+
+.courses-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.courses-container::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************ Tutorial Videos Container for Horizontal Scrolling */
+.tutorial-videos-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    background-color:#f2f2f2;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-top: 0px;
+    white-space: nowrap; /* Prevents line breaks within each row */
+}
+
+/* Video Card */
+.video-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust width to fit more cards horizontally */
+    min-height: 300px;
+    padding: 10px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Prevents cards from shrinking when scrolling */
+}
+
+/* Video Embed */
+.video-embed {
+    width: 100%;
+    height: 180px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Video Info */
+.video-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Video Title */
+.video-title {
+    font-size: 18px;
+    color: black;
+}
+
+/* Video Description */
+.video-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    white-space: wrap;
+}
+
+/* Watch Now Button */
+.watch-now-btn {
+    background-color: #ff5a8f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.watch-now-btn:hover {
+    background-color: #e0356f;
+}
+
+/* Horizontal Scrollbar for Tutorial Videos */
+.tutorial-videos-container::-webkit-scrollbar {
+    height: 2px;
+}
+
+.tutorial-videos-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.tutorial-videos-container::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************************** Articles Section */
+.learn-right h2 {
+    margin-top: 0px;
+}
+
+/* Articles Container */
+.articles-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-bottom: 4px;
+    background-color:#f2f2f2;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-top: 0px;
+}
+
+/* Article Tile */
+.article-tile {
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    height: 220px;
+    background: #ffffff;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.article-tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Article Thumbnail */
+.article-thumbnail {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Article Info */
+.article-info {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Article Title */
+.article-title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: black;
+}
+
+/* Article Summary */
+.article-summary {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 10px;
+    white-space: wrap;
+    font-weight: normal;
+}
+
+/* Read More Button */
+.read-more-btn {
+    background-color: #ff5a8f;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.read-more-btn:hover {
+    background-color: #e0356f;
+}
+
+/* Styling for Scroll Bar */
+.articles-container::-webkit-scrollbar {
+    height: 2px;
+}
+
+.articles-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.articles-container::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Books Container for Horizontal Scrolling */
+.books-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    white-space: nowrap; /* Prevent line breaks within each row */
+    background-color:#f2f2f2;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-top: 0px;
+}
+
+/****************************** Book Card */
+.book-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px; /* Adjust width to fit more cards horizontally */
+    min-height: 300px;
+    padding: 10px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevents cards from shrinking when scrolling */
+}
+
+.book-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Book Cover */
+.book-cover {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Book Info */
+.book-info {
+    margin-top: 10px;
+}
+
+/* Book Title */
+.book-title {
+    font-size: 18px;
+    color: black;
+    margin: 5px 0;
+}
+
+/* Book Description */
+.book-description {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    white-space: wrap;
+}
+
+/* Book Actions */
+.book-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Read and Download Buttons */
+.read-btn, .download-btn {
+    background-color: #ff5a8f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.read-btn:hover, .download-btn:hover {
+    background-color: #e0356f;
+}
+
+/* Styling for Horizontal Scrollbar */
+.books-container::-webkit-scrollbar {
+    height: 2px;
+}
+
+.books-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.books-container::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************Seperate Scrolling for Learn Main Content Wrapper */
+.learn-content {
+    display: flex;
+    width: 100%;
+    gap: 10px; /* Space between the two sections */
+    padding: 10px;
+    box-sizing: border-box;
+    height: calc(100vh - 57px); /* Set height based on viewport minus header and footer */
+    overflow: hidden; /* Prevent overall scrolling */
+}
+
+/* Left Section (38% Width) */
+.learn-left {
+    flex: 0 0 39%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 100%; /* Keep within parent container */
+}
+
+/* Right Section (60% Width) */
+.learn-right {
+    flex: 0 0 60%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 100%; /* Keep within parent container */
+}
+
+/* Scrollbar Styling for Consistency */
+.learn-left::-webkit-scrollbar,
+.learn-right::-webkit-scrollbar {
+    width: 2px;
+}
+
+.learn-left::-webkit-scrollbar-thumb,
+.learn-right::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.learn-left::-webkit-scrollbar-thumb:hover,
+.learn-right::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+}
+
+.site-footer {
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.learn-copy {
+    text-align: center;
+    color:black;
+    width: 100%;
+    padding:10px;
+    font-size:0.6em;
+}

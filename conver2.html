@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender-Based Violence Discussion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conversations.css">
+
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <!-- Chat Header -->
+        <header class="chat-header">
+
+            <div>
+                <!-- ← -->
+                <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i></button>
+                <h3>Women and Girls in Tech</h3>
+            </div>
+            <!-- <p>Discuss and share your thoughts with others</p> -->
+        </header>
+
+        <!-- Chat Messages Area -->
+        <div class="chat-messages">
+            <!-- Example Message from Another User -->
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile10.webp" alt="User 1 Profile" class="user-profile">
+                    <p class="user-name">Tisha Mansaray</p>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">Thanks, everyone, for joining today! I think it’s so important for us to talk about the current state of women in tech and what we can do to bring more girls into the field. I remember how intimidating it was at first, and even now, I often find myself being the only woman in the room. Have any of you had similar experiences?</p>
+                    <span class="message-time">10:30 AM</span>
+                </div>
+            </div>
+
+            <!-- Additional messages -->
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile5.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Maria Bertin</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Definitely. When I started in software development, it was rare to see women in technical roles, and it sometimes felt like I had to work twice as hard to prove myself. But I think things are changing, and that’s why discussions like this are so valuable. We’re building networks to support each other and create role models for the next generation.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile14.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Natasha Kargbo</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">I agree, Maria. Representation is crucial. In my experience as a data analyst, I've seen how just a few more women in leadership or senior roles can make a huge difference. They inspire younger women to stick with tech careers. But we still face issues, like the lack of mentorship opportunities specifically tailored for women. I think mentorship is key in retaining women in tech.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile12.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Fatu Seray</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Mentorship is essential, and I’d add that building self-confidence is also important. I run workshops for young girls, teaching them basic coding, and many of them doubt their abilities right from the start. But once they see that they can solve a problem or create something on their own, their confidence just skyrockets. This shows me that we need more early exposure programs to let girls see tech as something they can excel in.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+             <!-- Example Message from Current User -->
+             <div class="message current-user">
+                <div class="profile-div-c">
+                    <img src="Images/web/profiles/profile4.jpg" alt="Current User Profile" class="user-profile">
+                    <p class="user-name">You</p>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">Yes, confidence and early exposure are game-changers! In cybersecurity, where I work, we’re still a tiny minority as women, and it’s a field that feels closed off to outsiders. I think making tech roles more visible and demystifying what we do would help girls realize that it’s not out of reach for them. It's also important for girls to see the different paths within tech and know that there are various roles beyond just coding.</p>
+                    <span class="message-time">10:32 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile3.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Joy Gifty</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Yes, and that fear is real. I work with young women in schools, and it breaks my heart to hear them talk about harassment and violence as if it’s something they just have to accept. They say things like, “That’s just how men are,” or “I must’ve done something wrong.” They’re internalizing this idea that it’s their responsibility to avoid violence, which is unfair and damaging.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile5.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Maria Bertin</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">You’re absolutely right. Tech is so broad, and young girls may not realize that they can pursue their passions within the field, whether that’s in design, data science, cybersecurity, or even AI ethics. And let’s be honest—having diverse perspectives in tech isn’t just good for women, it’s good for the entire industry. Diverse teams innovate better and create solutions that benefit everyone.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile1.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Sarah Conteh</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Agreed, Sarah. Diversity brings fresh insights. But to truly create a space for women in tech, companies need to actively commit to it. This includes fair hiring practices, inclusive work environments, and family-friendly policies. It’s not just about getting women into tech, it’s about ensuring they stay and thrive.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile9.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Khadija Bah</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Education is another key, both for women and men. I think it’s essential to teach young people about healthy relationships, boundaries, and consent. If we start early, we can change the way society views gender-based violence and shift mindsets. We need to talk to boys about respect and empathy, not just to girls about protecting themselves.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+
+            <div class="message other-user">
+                <div class="profile-div">
+                    <img src="Images/web/profiles/profile8.jpg" alt="User 2 Profile" class="user-profile">
+                    <p class="user-name">Sasha</p>
+                </div>
+
+                <div class="message-content">
+                    <p class="message-text">Yes, Khadija, that’s so important. Prevention is often overlooked, but education can help break the cycle before it even begins. It’s about changing the culture, not just addressing individual cases.</p>
+                    <span class="message-time">10:35 AM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Input Area -->
+        <div class="message-input-area">
+            <input type="text" placeholder="Type a message..." class="message-input">
+            <button class="attach-btn"><i class="fas fa-paperclip"></i></button>
+            <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+
+    </div>
+
+    <script src="conversations.js"></script>
+</body>
+</html>
